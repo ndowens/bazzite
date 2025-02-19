@@ -78,6 +78,7 @@ RUN --mount=type=cache,dst=/var/cache/libdnf5 \
     --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/tmp \
     /ctx/unwrap && \
+    mkdir /home && \
     dnf5 -y install dnf5-plugins && \
     for copr in \
         kylegospo/bazzite \
