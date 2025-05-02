@@ -28,7 +28,6 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
 RUN --mount=type=cache,dst=/var/cache/rpm-ostree \
     rpm-ostree install \
 	firefox \
-	steam \
 	wine-wow64 \
 	wine-wow32 \
 	wine-mono \
@@ -36,7 +35,8 @@ RUN --mount=type=cache,dst=/var/cache/rpm-ostree \
 	keepassxc && \
 	ostree container commit
 
-RUN echo "%wheel	ALL=(ALL)	NOPASSWD: ALL" > /etc/sudoers.d/custom
+RUN echo "%wheel	ALL=(ALL)	NOPASSWD: ALL" > /etc/sudoers.d/custom &&\
+	ostree container commit
     
 ### LINTING
 ## Verify final image and contents are correct.
