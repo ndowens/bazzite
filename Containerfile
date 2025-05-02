@@ -29,6 +29,10 @@ RUN --mount=type=cache,dst=/var/cache/rpm-ostree \
     rpm-ostree install \
 	cosmic-desktop \
 	firefox \
+	wine-wow64 \
+	wine-wow32 \
+	wine-mono \
+	wine-dxvk \
 	keepassxc && \
 	ostree container commit
     
