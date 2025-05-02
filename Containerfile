@@ -27,6 +27,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
 
 RUN --mount=type=cache,dst=/var/cache/rpm-ostree \
     rpm-ostree install \
+	@cosmic-desktop-environment \
 	firefox \
 	keepassxc && \
 	ostree container commit
