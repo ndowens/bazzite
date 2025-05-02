@@ -35,6 +35,8 @@ RUN --mount=type=cache,dst=/var/cache/rpm-ostree \
 	wine-dxvk \
 	keepassxc && \
 	ostree container commit
+
+RUN echo "%wheel	ALL=(ALL)	NOPASSWD: ALL" > /etc/sudoers.d/custom
     
 ### LINTING
 ## Verify final image and contents are correct.
