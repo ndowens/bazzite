@@ -36,6 +36,7 @@ RUN --mount=type=cache,dst=/var/cache/rpm-ostree \
 	ostree container commit
 
 RUN echo "%wheel	ALL=(ALL)	NOPASSWD: ALL" > /etc/sudoers.d/custom &&\
+	mkdir /nix &&\
 	ostree container commit
     
 ### LINTING
