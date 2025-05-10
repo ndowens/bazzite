@@ -24,20 +24,6 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/tmp \
     /ctx/build.sh && \
     ostree container commit
-
-RUN --mount=type=cache,dst=/var/cache/rpm-ostree \
-    rpm-ostree install \
-	firefox \
-	wine-wow64 \
-	wine-wow32 \
-	wine-mono \
-	wine-dxvk \
-	keepassxc && \
-	ostree container commit
-
-RUN echo "%wheel	ALL=(ALL)	NOPASSWD: ALL" > /etc/sudoers.d/custom &&\
-	mkdir /nix &&\
-	ostree container commit
     
 ### LINTING
 ## Verify final image and contents are correct.
