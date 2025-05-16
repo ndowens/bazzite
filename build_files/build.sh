@@ -15,7 +15,6 @@ dnf5 install -y \
 	wine-wow64 \
 	wine-wow32 \
 	wine-mono \
-	wine-dxvk \
 	keepassxc \
 	mosh \
 	zsh
