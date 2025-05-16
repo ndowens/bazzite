@@ -18,9 +18,7 @@ dnf5 install -y \
 	wine-dxvk \
 	keepassxc \
 	mosh \
-	tailscale \
-	zsh \
-	fish
+	zsh
 
 echo "%wheel	ALL=(ALL)	NOPASSWD: ALL" > /etc/sudoers.d/custom &&\
 		mkdir /nix &&
@@ -34,4 +32,4 @@ echo "%wheel	ALL=(ALL)	NOPASSWD: ALL" > /etc/sudoers.d/custom &&\
 
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket sshd tailscaled
+systemctl enable podman.socket
