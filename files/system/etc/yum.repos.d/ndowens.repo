@@ -1,0 +1,7 @@
+[ndowens]
+name=ndowens (Fedora_42)
+type=rpm-md
+baseurl=https://download.opensuse.org/repositories/home:/ndowens.04/Fedora_42/
+gpgcheck=1
+gpgkey=https://download.opensuse.org/repositories/home:/ndowens.04/Fedora_42/repodata/repomd.xml.key
+enabled=1
