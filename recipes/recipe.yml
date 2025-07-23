@@ -47,6 +47,11 @@ modules:
       - kernel-cachyos-lto-core
       - kernel-cachyos-lto-devel-matched
       - zen-browser
+    remove:
+      - kernel-core
+      - kernel-modules
+      - kernel-devel
+      - kernel-headers
     replace:
       - from-repo: https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-lto/repo/fedora-42/bieszczaders-kernel-cachyos-lto-fedora-42.repo
         packages:
