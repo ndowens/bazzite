@@ -41,11 +41,11 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-42/sneexy-zen-browser-fedora-42.repo
     keys:
       - https://download.copr.fedorainfracloud.org/results/bieszczaders/kernel-cachyos-lto/pubkey.gpg
+
     install:
-      allow-erasing: true
-      install-weak-deps: false
-      skip-unavailable: true
-      packages:
+    allow-erasing: true
+    install-weak-deps: false
+    skip-unavailable: true
       - kernel-cachyos-lto
       - kernel-cachyos-lto-modules
       - kernel-cachyos-lto-core
