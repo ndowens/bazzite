@@ -33,6 +33,7 @@ modules:
     scripts:
       - hyprland.sh
       - install_apps.sh
+      - cachyos-kernel.sh
   
  # - type: justfiles
  #   validate: true
