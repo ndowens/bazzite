@@ -8,7 +8,7 @@ enable_copr() {
 
 enable_copr solopasha/hyprland
 enable_copr erikreider/SwayNotificationCenter
-enable_copr gerelef/ghostty/
+enable_copr gerelef/ghostty
 dnf5 -y install \
     gum \
     figlet \
