@@ -58,7 +58,6 @@ declare -A RPM_PACKAGES=(
     docker-compose-plugin"
 
   ["cloudflare-warp"]="cloudflare-warp"
-  ["copr:sneexy/zen-browser"]="zen-browser"
   ["vscode"]="code"
   ["cloudflared"]="cloudflared"
  )

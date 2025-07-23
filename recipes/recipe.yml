@@ -38,6 +38,7 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-lto/repo/fedora-42/bieszczaders-kernel-cachyos-lto-fedora-42.repo
+      - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-42/sneexy-zen-browser-fedora-42.repo
     keys:
       - https://download.copr.fedorainfracloud.org/results/bieszczaders/kernel-cachyos-lto/pubkey.gpg
     install:
@@ -45,6 +46,7 @@ modules:
       - kernel-cachyos-lto-modules
       - kernel-cachyos-lto-core
       - kernel-cachyos-lto-devel-matched
+      - zen-browser
     replace:
       - from-repo: https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-lto/repo/fedora-42/bieszczaders-kernel-cachyos-lto-fedora-42.repo
         packages:
