@@ -31,10 +31,22 @@ modules:
   
   - type: script
     scripts:
+      - hyprland.sh
       - install_apps.sh
-      - cachyos-kernel.sh
   
   - type: justfiles
     validate: true
     include:
       - default.just
+
+   - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-lto/repo/fedora-42/bieszczaders-kernel-cachyos-lto-fedora-%OS_VERSION.repo
+    keys:
+      - https://download.copr.fedorainfracloud.org/results/bieszczaders/kernel-cachyos-lto/pubkey.gpg
+    install:
+      - kernel-cachyos-lto kernel-cachyos-lto-modules kernel-cachyos-lto-core kernel-cachyos-lto-devel-matched
+    replace:
+      - from-repo: https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-lto/repo/fedora-42/bieszczaders-kernel-cachyos-lto-fedora-%OS_VERSION.repo
+      packages:
+        - akmods
