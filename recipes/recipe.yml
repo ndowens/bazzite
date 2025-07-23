@@ -42,9 +42,9 @@ modules:
     keys:
       - https://download.copr.fedorainfracloud.org/results/bieszczaders/kernel-cachyos-lto/pubkey.gpg
     install:
-    allow-erasing: true
-    install-weak-deps: false
-    skip-unavailable: true
+      allow-erasing: true
+      install-weak-deps: false
+      skip-unavailable: true
       packages:
       - kernel-cachyos-lto
       - kernel-cachyos-lto-modules
