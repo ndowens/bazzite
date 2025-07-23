@@ -45,7 +45,10 @@ modules:
     keys:
       - https://download.copr.fedorainfracloud.org/results/bieszczaders/kernel-cachyos-lto/pubkey.gpg
     install:
-      - kernel-cachyos-lto kernel-cachyos-lto-modules kernel-cachyos-lto-core kernel-cachyos-lto-devel-matched
+      - kernel-cachyos-lto
+      - kernel-cachyos-lto-modules
+      - kernel-cachyos-lto-core
+      - kernel-cachyos-lto-devel-matched
     replace:
       - from-repo: https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-lto/repo/fedora-42/bieszczaders-kernel-cachyos-lto-fedora-%OS_VERSION.repo
         packages:
