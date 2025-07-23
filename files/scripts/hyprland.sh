@@ -25,7 +25,7 @@ dnf5 -y install \
     network-manager-applet \
     gtk4 \
     libadwaita \
-    fuse2 \
+    fuse \
     ImageMagick \
     jq \
     xclip \
