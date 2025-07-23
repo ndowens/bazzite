@@ -34,10 +34,10 @@ modules:
       - hyprland.sh
       - install_apps.sh
   
-  - type: justfiles
-    validate: true
-    include:
-      - default.just
+ # - type: justfiles
+ #   validate: true
+ #   include:
+ #     - default.just
 
   - type: rpm-ostree
     repos:
