@@ -88,9 +88,6 @@ done
 log "Enabling system services"
 systemctl enable podman.socket libvirtd.service
 
-log "Adding Amy OS just recipes"
-echo "import \"/usr/share/amyos/just/amy.just\"" >>/usr/share/ublue-os/justfile
-
 log "Hide incompatible Bazzite just recipes"
 for recipe in "install-coolercontrol" "install-openrgb"; do
   if ! grep -l "^$recipe:" /usr/share/ublue-os/just/*.just | grep -q .; then

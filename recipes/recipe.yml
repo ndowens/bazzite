@@ -31,7 +31,6 @@ modules:
   
   - type: script
     scripts:
-      #- hyprland.sh
       - install_apps.sh
       - cachyos-kernel.sh
 
@@ -49,6 +48,7 @@ modules:
         - kernel-cachyos-lto-core
         - kernel-cachyos-lto-devel-matched
         - zen-browser
+        - fakeroot
     remove:
       packages:
         - kernel-core
