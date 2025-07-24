@@ -50,11 +50,11 @@ modules:
       - zen-browser
     remove:
     allow-erasing: true
-      packages:
-        - kernel-core
-        - kernel-modules
-        - kernel-devel
-        - kernel-headers
+    packages:
+      - kernel-core
+      - kernel-modules
+      - kernel-devel
+      - kernel-headers
     replace:
       - from-repo: https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-lto/repo/fedora-42/bieszczaders-kernel-cachyos-lto-fedora-42.repo
         packages:
