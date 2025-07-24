@@ -35,17 +35,15 @@ modules:
       copr:
         enable:
           - bieszczaders/kernel-cachyos-lto
-          - sneexy/zen-browser
           - lihaohong/chezmoi
     install:
-      #allow-erasing: true
         packages:
         - firefox
         - kernel-cachyos-lto
         - kernel-cachyos-lto-modules
         - kernel-cachyos-lto-core
         - kernel-cachyos-lto-devel-matched
-        #- zen-browser
+        - zen-browser
         - google-noto-fonts-all
         - chezmoi
         - repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
@@ -68,6 +66,9 @@ modules:
     system:
       disabled:
         - tailscaled
+      enabled:
+        - podman.socket
+        - libvirtd.service
     user:
       enabled:
         - chezmoi-init.service

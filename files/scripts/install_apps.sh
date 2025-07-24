@@ -60,7 +60,7 @@ declare -A RPM_PACKAGES=(
   ["cloudflare-warp"]="cloudflare-warp"
   ["vscode"]="code"
   ["cloudflared"]="cloudflared"
-  ["sneexy/zen-browser"]="zen-browser"
+
  )
  
 log "Remove waydroid"
