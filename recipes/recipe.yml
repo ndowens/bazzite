@@ -35,6 +35,7 @@ modules:
         enable:
           - bieszczaders/kernel-cachyos-lto
           - sneexy/zen-browser
+          - lihaohong/chezmoi
     install:
       #allow-erasing: true
       packages:
@@ -51,6 +52,10 @@ modules:
         - kernel-modules
         - kernel-devel
         - kernel-headers
+    replace:
+      - from-repo: https://coprs.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-lto/repo/fedora-42/bieszczaders-kernel-cachyos-lto-fedora-42.repo
+        packages:
+          - akmods
 
   - type: chezmoi
     repository: "https://github.com/ndowens/dotfiles.git"
