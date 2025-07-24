@@ -38,13 +38,16 @@ modules:
           - lihaohong/chezmoi
     install:
       #allow-erasing: true
-      packages:
+        packages:
         - kernel-cachyos-lto
         - kernel-cachyos-lto-modules
         - kernel-cachyos-lto-core
         - kernel-cachyos-lto-devel-matched
         - zen-browser
         - chezmoi
+        - repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
+          packages:
+            - akmods
     remove:
       auto-remove: false
       packages:
@@ -52,10 +55,6 @@ modules:
         - kernel-modules
         - kernel-devel
         - kernel-headers
-    replace:
-      - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
-        packages:
-          - akmods
 
   - type: chezmoi
     repository: "https://github.com/ndowens/dotfiles.git"
