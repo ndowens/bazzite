@@ -27,7 +27,8 @@ modules:
   - type: script
     scripts:
       - install_apps.sh
-      - cachyos-kernel.sh
+    snippets:
+      - "setsebool -P domain_kernel_load_modules on"
 
   - type: dnf
     repos:
@@ -44,6 +45,7 @@ modules:
         - kernel-cachyos-lto-core
         - kernel-cachyos-lto-devel-matched
         - zen-browser
+        - google-noto-fonts-all
         - chezmoi
         - repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
           packages:
