@@ -53,7 +53,7 @@ modules:
         - kernel-devel
         - kernel-headers
     replace:
-      - from-repo: https://coprs.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-lto/repo/fedora-42/bieszczaders-kernel-cachyos-lto-fedora-42.repo
+      - from-repo: https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-lto/repo/fedora-42/bieszczaders-kernel-cachyos-lto-fedora-42.repo
         packages:
           - akmods
 
