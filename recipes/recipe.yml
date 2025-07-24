@@ -43,13 +43,14 @@ modules:
       keys:
         - https://download.copr.fedorainfracloud.org/results/bieszczaders/kernel-cachyos-lto/pubkey.gpg
     install:
-      - kernel-cachyos-lto
-      - kernel-cachyos-lto-modules
-      - kernel-cachyos-lto-core
-      - kernel-cachyos-lto-devel-matched
-      - zen-browser
+      allow-erasing: true
+      packages:
+        - kernel-cachyos-lto
+        - kernel-cachyos-lto-modules
+        - kernel-cachyos-lto-core
+        - kernel-cachyos-lto-devel-matched
+        - zen-browser
     remove:
-    allow-erasing: true
       packages:
         - kernel-core
         - kernel-modules
