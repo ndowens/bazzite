@@ -37,11 +37,10 @@ modules:
 
   - type: dnf
     repos:
-      files:
-        - https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-lto/repo/fedora-42/bieszczaders-kernel-cachyos-lto-fedora-42.repo
-        - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-42/sneexy-zen-browser-fedora-42.repo
-      keys:
-        - https://download.copr.fedorainfracloud.org/results/bieszczaders/kernel-cachyos-lto/pubkey.gpg
+      copr:
+        enable:
+          - bieszczaders/kernel-cachyos-lto
+          - sneexy/zen-browser
     install:
       allow-erasing: true
       packages:
@@ -56,7 +55,3 @@ modules:
         - kernel-modules
         - kernel-devel
         - kernel-headers
-    replace:
-      - from-repo: https://copr.fedorainfracloud.org/coprs/bieszczaders/kernel-cachyos-lto/repo/fedora-42/bieszczaders-kernel-cachyos-lto-fedora-42.repo
-        packages:
-          - akmods
