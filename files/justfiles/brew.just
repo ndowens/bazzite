@@ -1,5 +1,4 @@
 bluefin-cli:
-    #!/usr/bin/env bash
     brew install \
         atuin \
         bat \
