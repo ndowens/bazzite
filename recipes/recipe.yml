@@ -73,8 +73,3 @@ modules:
       enabled:
         - chezmoi-init.service
         - chezmoi-update.timer
-
-  - type: justfiles
-    validate: true
-    include:
-      - brew.just
