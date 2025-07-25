@@ -50,7 +50,6 @@ modules:
         - google-noto-fonts-all
         - chezmoi
         - librewolf
-        - zen-browser
         - repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
           packages:
             - akmods
