@@ -32,6 +32,10 @@ modules:
 
   - type: dnf
     repos:
+      files:
+        - https://repo.librewolf.net/librewolf.repo
+      keys:
+        - https://repo.librewolf.net/keyring.gpg
       copr:
         enable:
           - bieszczaders/kernel-cachyos-lto
@@ -45,7 +49,7 @@ modules:
         - kernel-cachyos-lto-devel-matched
         - google-noto-fonts-all
         - chezmoi
-        - zen-browser
+        - librewolf
         - repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
           packages:
             - akmods
