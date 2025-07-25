@@ -34,12 +34,12 @@ modules:
     repos:
       files:
         - https://repo.librewolf.net/librewolf.repo
-      keys:
-        - https://repo.librewolf.net/keyring.gpg
       copr:
         enable:
           - bieszczaders/kernel-cachyos-lto
           - lihaohong/chezmoi
+    optfix:
+      - zen-browser
     install:
         packages:
         - firefox
