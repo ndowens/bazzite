@@ -48,7 +48,7 @@ declare -A RPM_PACKAGES=(
 
 
   ["fedora-multimedia"]="\
-    mpv" 
+    mpv"
 
   ["docker-ce"]="\
     containerd.io \
@@ -62,7 +62,7 @@ declare -A RPM_PACKAGES=(
   ["cloudflared"]="cloudflared"
 
  )
- 
+
 log "Remove waydroid"
 dnf5 -y remove waydroid waydroid-selinux
 
@@ -85,14 +85,3 @@ for repo in "${!RPM_PACKAGES[@]}"; do
     "${cmd[@]}"
   fi
 done
-
-log "Hide incompatible Bazzite just recipes"
-for recipe in "install-coolercontrol" "install-openrgb"; do
-  if ! grep -l "^$recipe:" /usr/share/ublue-os/just/*.just | grep -q .; then
-    echo "Error: Recipe $recipe not found in any just file"
-    exit 1
-  fi
-  sed -i "s/^$recipe:/_$recipe:/" /usr/share/ublue-os/just/*.just
-done
-
-log "Build process completed"
