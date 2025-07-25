@@ -3,8 +3,14 @@ type: dnf
 repos:
   files:
     - https://download.docker.com/linux/fedora/docker-ce.repo
-    - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+    - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
+    - ndowens.repo
+    - sneexy-zen.repo
+    - vscodium.repo
+    - docker-ce.repo
+    - cloudflared.repo
+    - cloudflare-warp.repo
 install:
   packages:
     - bazaar
@@ -42,6 +48,7 @@ install:
     - util-linux
     - virt-manager
     - virt-viewer
+    - vscodium
     - zsh
     - zsh-autosuggestions
 remove:
