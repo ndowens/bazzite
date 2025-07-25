@@ -30,6 +30,7 @@ modules:
   - type: script
     snippets:
       - "setsebool -P domain_kernel_load_modules on"
+      - "dnf5 install @cosmic-desktop-environment"
 
   - type: dnf
     repos:
