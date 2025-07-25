@@ -8,6 +8,9 @@ base-image: ghcr.io/ublue-os/bazzite
 image-version: latest
 
 modules:
+  - type: dnf
+  - from-file: install-packages.yml
+
   - type: files
     files:
       - source: system
@@ -23,10 +26,8 @@ modules:
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-  
+
   - type: script
-    scripts:
-      - install_apps.sh
     snippets:
       - "setsebool -P domain_kernel_load_modules on"
 
@@ -38,10 +39,8 @@ modules:
         enable:
           - bieszczaders/kernel-cachyos-lto
           - lihaohong/chezmoi
-    optfix:
-      - zen-browser
     install:
-        packages:
+      packages:
         - firefox
         - kernel-cachyos-lto
         - kernel-cachyos-lto-modules
