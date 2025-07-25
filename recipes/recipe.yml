@@ -51,12 +51,14 @@ modules:
           packages:
             - akmods
     remove:
-      auto-remove: false
+      #     auto-remove: false
       packages:
+        - akmods
         - kernel-core
-        - kernel-modules
         - kernel-devel
         - kernel-headers
+        - kernel-modules
+        - libreoffice
 
   - type: chezmoi
     repository: "https://github.com/ndowens/dotfiles.git"
