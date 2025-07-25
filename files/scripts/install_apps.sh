@@ -66,7 +66,6 @@ declare -A RPM_PACKAGES=(
 log "Remove waydroid"
 dnf5 -y remove waydroid waydroid-selinux
 
-log "Starting Amy OS build process"
 log "Installing RPM packages"
 mkdir -p /var/opt
 for repo in "${!RPM_PACKAGES[@]}"; do
@@ -86,9 +85,6 @@ for repo in "${!RPM_PACKAGES[@]}"; do
     "${cmd[@]}"
   fi
 done
-
-log "Enabling system services"
-systemctl enable podman.socket libvirtd.service
 
 log "Hide incompatible Bazzite just recipes"
 for recipe in "install-coolercontrol" "install-openrgb"; do
