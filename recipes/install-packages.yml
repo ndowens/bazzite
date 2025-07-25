@@ -1,8 +1,10 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 type: dnf
-files:
-  - https://download.docker.com/linux/fedora/docker-ce.repo
-  - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
-  - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+repos:
+  files:
+    - https://download.docker.com/linux/fedora/docker-ce.repo
+    - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
+    - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 install:
   packages:
     - bazaar
