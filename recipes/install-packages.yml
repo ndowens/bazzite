@@ -1,0 +1,48 @@
+type: dnf
+files:
+  - https://download.docker.com/linux/fedora/docker-ce.repo
+  - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
+  - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+install:
+  packages:
+    - bazaar
+    - bchunk
+    - cloudflare-warp
+    - cloudflared
+    - containerd.io
+    - docker-buildx-plugin
+    - docker-ce
+    - docker-ce-cli
+    - docker-compose-plugin
+    - fuse-btfs
+    - fuse-devel
+    - fuse3-devel
+    - fzf
+    - gparted
+    - gwenview
+    - hack-nerd-fonts
+    - kcalc
+    - keepassxc
+    - krunner-bazaar
+    - ksystemlog
+    - libcap-ng
+    - libcap-ng-devel
+    - neovim
+    - plasma-workspace-x11
+    - procps-ng
+    - procps-ng-devel
+    - qemu-kvm
+    - scx-scheds
+    - thefuck
+    - ubuntu-nerd-fonts
+    - ubuntumono-nerd-fonts
+    - ubuntusans-nerd-fonts
+    - util-linux
+    - virt-manager
+    - virt-viewer
+    - zsh
+    - zsh-autosuggestions
+remove:
+  packages:
+    - waydroid
+    - waydroid-selinux
