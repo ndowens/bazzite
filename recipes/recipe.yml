@@ -31,33 +31,6 @@ modules:
     snippets:
       - "setsebool -P domain_kernel_load_modules on"
 
-  - type: dnf
-    repos:
-      copr:
-        enable:
-          - bieszczaders/kernel-cachyos-lto
-          - lihaohong/chezmoi
-    install:
-      packages:
-        - firefox
-        - kernel-cachyos-lto
-        - kernel-cachyos-lto-modules
-        - kernel-cachyos-lto-core
-        - kernel-cachyos-lto-devel-matched
-        - google-noto-fonts-all
-        - chezmoi
-        - repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
-          packages:
-            - akmods
-    remove:
-      #     auto-remove: false
-      packages:
-        - akmods
-        - kernel-core
-        - kernel-devel
-        - kernel-headers
-        - kernel-modules
-
   - type: chezmoi
     repository: "https://github.com/ndowens/dotfiles.git"
     all-users: false

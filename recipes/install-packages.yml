@@ -1,6 +1,10 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 type: dnf
 repos:
+  copr:
+    enable:
+      - bieszczaders/kernel-cachyos-lto
+      - lihaohong/chezmoi
   files:
     - https://download.docker.com/linux/fedora/docker-ce.repo
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
@@ -15,6 +19,7 @@ install:
   packages:
     - bazaar
     - bchunk
+    - chezmoi
     - cloudflare-warp
     - cloudflared
     - containerd.io
@@ -22,15 +27,21 @@ install:
     - docker-ce
     - docker-ce-cli
     - docker-compose-plugin
+    - firefox
     - fuse-btfs
     - fuse-devel
     - fuse3-devel
     - fzf
+    - google-noto-fonts-all
     - gparted
     - gwenview
     - hack-nerd-fonts
     - kcalc
     - keepassxc
+    - kernel-cachyos-lto
+    - kernel-cachyos-lto-core
+    - kernel-cachyos-lto-devel-matched
+    - kernel-cachyos-lto-modules
     - krunner-bazaar
     - ksystemlog
     - libcap-ng
@@ -51,7 +62,15 @@ install:
     - vscodium
     - zsh
     - zsh-autosuggestions
+    - repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
+      packages:
+        - akmods
 remove:
+  auto-remove: false
   packages:
+    - kernel-core
+    - kernel-devel
+    - kernel-headers
+    - kernel-modules
     - waydroid
     - waydroid-selinux
