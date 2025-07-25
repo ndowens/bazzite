@@ -30,7 +30,6 @@ modules:
   - type: script
     snippets:
       - "setsebool -P domain_kernel_load_modules on"
-      - "dnf5 -y install @cosmic-desktop-environment"
 
   - type: dnf
     repos:
@@ -58,7 +57,6 @@ modules:
         - kernel-devel
         - kernel-headers
         - kernel-modules
-        - libreoffice
 
   - type: chezmoi
     repository: "https://github.com/ndowens/dotfiles.git"
