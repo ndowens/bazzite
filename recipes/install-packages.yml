@@ -6,7 +6,6 @@ repos:
       - lihaohong/chezmoi
   files:
     - bieszczaders-kernel-cachyos-fedora-lto-%OS_VERSION%.repo
-    - bieszczaders-kernel-cachyos-addons-fedora-%OS_VERSION%.repo
     - cloudflare-warp.repo
     - cloudflared.repo
     - docker-ce.repo
@@ -53,10 +52,7 @@ install:
     - ubuntu-nerd-fonts
     - ubuntumono-nerd-fonts
     - ubuntusans-nerd-fonts
-    - uksmd
     - util-linux
-    - virt-manager
-    - virt-viewer
     - repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
       packages:
         - akmods
