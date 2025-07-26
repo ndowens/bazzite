@@ -33,7 +33,7 @@ modules:
 
   - type: chezmoi
     repository: "https://github.com/ndowens/dotfiles.git"
-    all-users: false
+    all-users: true
     file-conflict-policy: replace
 
   - type: systemd
@@ -43,7 +43,6 @@ modules:
       enabled:
         - podman.socket
         - libvirtd.service
-        - uksmd.service
     user:
       enabled:
         - chezmoi-init.service
