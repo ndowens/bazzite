@@ -17,13 +17,15 @@ modules:
         destination: /
 
   - type: default-flatpaks
-    notify: true
-    system:
-      install:
-        - eu.betterbird.Betterbird
-      remove:
-        - org.gnome.eog
-    user: {} # Also add Flathub user repo, but no user packages
+    configurations:
+      - notify: true
+        scope: system
+        repo:
+          url: https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+          name: flathub-beta
+          title: Flathub Beta
+        install:
+          - eu.betterbird.Betterbird
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
