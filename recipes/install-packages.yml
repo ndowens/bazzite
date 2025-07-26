@@ -5,7 +5,8 @@ repos:
     enable:
       - lihaohong/chezmoi
   files:
-    - bieszczaders-kernel-cachyos-fedora-lto-%OS_VERSION%
+    - bieszczaders-kernel-cachyos-fedora-lto-%OS_VERSION%.repo
+    - bieszczaders-kernel-cachyos-addons-fedora-%OS_VERSION%.repo
     - cloudflare-warp.repo
     - cloudflared.repo
     - docker-ce.repo
