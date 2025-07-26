@@ -12,7 +12,6 @@ repos:
     - docker-ce.repo
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     - ndowens.repo
-    - sneexy-zen.repo
 install:
   packages:
     - bazaar
