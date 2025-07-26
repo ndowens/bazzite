@@ -43,6 +43,7 @@ modules:
       enabled:
         - podman.socket
         - libvirtd.service
+        - uksmd.service
     user:
       enabled:
         - chezmoi-init.service

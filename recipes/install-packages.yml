@@ -3,18 +3,15 @@ type: dnf
 repos:
   copr:
     enable:
-      - bieszczaders/kernel-cachyos-lto
       - lihaohong/chezmoi
   files:
-    - https://download.docker.com/linux/fedora/docker-ce.repo
+    - bieszczaders-kernel-cachyos-fedora-lto-%OS_VERSION%
+    - cloudflare-warp.repo
+    - cloudflared.repo
+    - docker-ce.repo
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-    - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
     - ndowens.repo
     - sneexy-zen.repo
-    - vscodium.repo
-    - docker-ce.repo
-    - cloudflared.repo
-    - cloudflare-warp.repo
 install:
   packages:
     - bazaar
@@ -56,12 +53,10 @@ install:
     - ubuntu-nerd-fonts
     - ubuntumono-nerd-fonts
     - ubuntusans-nerd-fonts
+    - uksmd
     - util-linux
     - virt-manager
     - virt-viewer
-    - vscodium
-    - zsh
-    - zsh-autosuggestions
     - repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
       packages:
         - akmods
