@@ -32,7 +32,6 @@ install:
     - gparted
     - gwenview
     - hack-nerd-fonts
-    - kcalc
     - keepassxc
     - kernel-cachyos-lto
     - kernel-cachyos-lto-core
