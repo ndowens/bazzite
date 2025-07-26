@@ -30,7 +30,6 @@ modules:
   - type: script
     snippets:
       - "setsebool -P domain_kernel_load_modules on"
-      - "rm -f /usr/local/bin/ujust"
 
   - type: chezmoi
     repository: "https://github.com/ndowens/dotfiles.git"
