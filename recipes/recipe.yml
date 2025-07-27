@@ -43,6 +43,7 @@ modules:
       disabled:
         - tailscaled
       enabled:
+        - ssh-agent.service
         - podman.socket
         - libvirtd.service
     user:
