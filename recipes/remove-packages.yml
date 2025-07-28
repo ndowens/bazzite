@@ -1,3 +1,4 @@
+# For packages with their deps
 type: dnf
 remove:
   packages:

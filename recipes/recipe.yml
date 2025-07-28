@@ -27,7 +27,6 @@ modules:
           title: Flathub Beta
         install:
           - eu.betterbird.Betterbird
-          - dev.zed.Zed
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
