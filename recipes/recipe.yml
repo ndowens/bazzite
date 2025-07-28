@@ -10,6 +10,7 @@ image-version: latest
 modules:
   - type: dnf
   - from-file: install-packages.yml
+  - from-file: remove-packages.yml
 
   - type: files
     files:
@@ -26,6 +27,7 @@ modules:
           title: Flathub Beta
         install:
           - eu.betterbird.Betterbird
+          - dev.zed.Zed
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
@@ -40,8 +42,6 @@ modules:
 
   - type: systemd
     system:
-      disabled:
-        - tailscaled
       enabled:
         - ssh-agent.service
         - podman.socket

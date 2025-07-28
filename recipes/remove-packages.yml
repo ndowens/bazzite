@@ -1,0 +1,4 @@
+type: dnf
+remove:
+  packages:
+    - tailscale
