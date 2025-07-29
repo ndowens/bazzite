@@ -23,11 +23,11 @@ install:
     - docker-ce
     - docker-ce-cli
     - docker-compose-plugin
-    - firefox
     - fuse-btfs
     - fuse-devel
     - fuse3-devel
     - fzf
+    - google-droid-fonts-all
     - google-noto-fonts-all
     - gparted
     - gwenview
@@ -47,7 +47,6 @@ install:
     - ubuntu-nerd-fonts
     - ubuntumono-nerd-fonts
     - ubuntusans-nerd-fonts
-    - util-linux
     - repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
       packages:
         - akmods
