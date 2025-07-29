@@ -42,11 +42,11 @@ modules:
   - type: systemd
     system:
       enabled:
-        - ssh-agent.service
         - podman.socket
         - libvirtd.service
     user:
       enabled:
+        - ssh-agent.service
         - chezmoi-init.service
         - chezmoi-update.timer
 
