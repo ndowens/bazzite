@@ -47,6 +47,7 @@ install:
     - ubuntu-nerd-fonts
     - ubuntumono-nerd-fonts
     - ubuntusans-nerd-fonts
+    - zed
     - repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
       packages:
         - akmods
