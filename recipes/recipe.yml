@@ -54,3 +54,6 @@ modules:
     additional-repos: true
     auto-upgrade: true
     upgrade-interval: "8h"
+
+  - type: justfiles
+    validate: true
