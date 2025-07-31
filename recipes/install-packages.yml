@@ -11,6 +11,7 @@ repos:
     - docker-ce.repo
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     - ndowens.repo
+    - brave-browser.repo
 install:
   packages:
     - bazaar
