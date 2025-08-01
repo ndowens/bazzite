@@ -37,10 +37,6 @@ install:
     - gwenview
     - hack-nerd-fonts
     - keepassxc
-    - kernel-cachyos-lto
-    - kernel-cachyos-lto-core
-    - kernel-cachyos-lto-devel-matched
-    - kernel-cachyos-lto-modules
     - krunner-bazaar
     - ksystemlog
     - neovim
@@ -61,6 +57,8 @@ remove:
 replace:
   - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
     packages:
+      - old: kernel
+        new: kernel-cachyos-lto
       - old: kernel-core
         new: kernel-cachyos-lto-core
       - old: kernel-devel
