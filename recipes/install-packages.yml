@@ -55,13 +55,15 @@ install:
 remove:
   auto-remove: false
   packages:
-    - kernel-core
-    - kernel-devel
     - kernel-headers
-    - kernel-modules
     - waydroid
     - waydroid-selinux
 replace:
   - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
     packages:
-      - akmods
+      - old: kernel-core
+        new: kernel-cachyos-lto-core
+      - old: kernel-devel
+        new: kernel-cachyos-lto-devel-matched
+      - old: kernel-modules
+        new: kernel-cachyos-lto-modules
