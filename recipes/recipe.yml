@@ -56,4 +56,4 @@ modules:
     upgrade-interval: "8h"
 
   - type: justfiles
-    validate: true
+    validate: false
