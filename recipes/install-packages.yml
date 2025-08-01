@@ -48,14 +48,9 @@ install:
     - ubuntumono-nerd-fonts
     - ubuntusans-nerd-fonts
     - zed
-remove:
-  auto-remove: false
-  packages:
-    - kernel-headers
-    - waydroid
-    - waydroid-selinux
 replace:
   - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
+    allow-erasing: true
     packages:
       - old: kernel
         new: kernel-cachyos-lto
@@ -65,3 +60,9 @@ replace:
         new: kernel-cachyos-lto-devel-matched
       - old: kernel-modules
         new: kernel-cachyos-lto-modules
+remove:
+  auto-remove: false
+  packages:
+    - kernel-headers
+    - waydroid
+    - waydroid-selinux
