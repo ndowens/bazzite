@@ -57,7 +57,7 @@ replace:
       - old: kernel-core
         new: kernel-cachyos-lto-core
       - old: kernel-devel
-        new: kernel-cachyos-lto-devel-matched
+        new: kernel-cachyos-lto-devel
       - old: kernel-modules
         new: kernel-cachyos-lto-modules
 remove:
