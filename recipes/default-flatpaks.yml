@@ -3,9 +3,5 @@ configurations:
   - scope: user
     repo:
       title: Flathub (user)
-  - notify: true
-    scope: system
-    repo:
-      title: Flathub (system)
-      install:
-        - eu.betterbird.Betterbird
+    install:
+      - eu.betterbird.Betterbird
