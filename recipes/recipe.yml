@@ -9,8 +9,11 @@ image-version: latest
 
 modules:
   - type: dnf
-  - from-file: install-packages.yml
+  - from-file: dnf.yml
   - from-file: remove-packages.yml
+
+  - type: default-flatpaks
+  - from-file: default-flatpaks.yml
 
   - type: files
     files:
