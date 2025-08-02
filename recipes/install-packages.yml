@@ -2,18 +2,20 @@
 type: dnf
 optfix:
   - brave.com
+  - zen
 repos:
   copr:
     enable:
       - lihaohong/chezmoi
+      - bieszczaders/kernel-cachyos-lto
   files:
-    - bieszczaders-kernel-cachyos-fedora-lto-%OS_VERSION%.repo
     - cloudflare-warp.repo
     - cloudflared.repo
     - docker-ce.repo
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     - ndowens.repo
     - brave-browser.repo
+    - sneexy-zen.repo
 install:
   packages:
     - bazaar
@@ -27,10 +29,6 @@ install:
     - docker-ce
     - docker-ce-cli
     - docker-compose-plugin
-    - fuse-btfs
-    - fuse-devel
-    - fuse3-devel
-    - fzf
     - google-droid-fonts-all
     - google-noto-fonts-all
     - gparted
@@ -43,11 +41,11 @@ install:
     - plasma-workspace-x11
     - qemu-kvm
     - scx-scheds
-    - thefuck
     - ubuntu-nerd-fonts
     - ubuntumono-nerd-fonts
     - ubuntusans-nerd-fonts
     - zed
+    - zen-browser
 replace:
   - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
     allow-erasing: true
