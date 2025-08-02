@@ -59,7 +59,7 @@ replace:
       - old: kernel-modules
         new: kernel-cachyos-lto-modules
 remove:
-  auto-remove: false
+  #auto-remove: false
   packages:
     - kernel-headers
     - waydroid
