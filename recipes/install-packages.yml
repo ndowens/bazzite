@@ -37,6 +37,7 @@ install:
     - keepassxc
     - krunner-bazaar
     - ksystemlog
+    - legcord
     - neovim
     - plasma-workspace-x11
     - qemu-kvm
