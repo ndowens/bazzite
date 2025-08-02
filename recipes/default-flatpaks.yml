@@ -1,7 +1,5 @@
 type: default-flatpaks
 configurations:
   - scope: user
-    repo:
-      title: Flathub (user)
     install:
       - eu.betterbird.Betterbird
