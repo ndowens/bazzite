@@ -1,6 +1,6 @@
 type: default-flatpaks
 configurations:
   - notify: false
-    scope: user
+    scope: system
     install:
       - eu.betterbird.Betterbird

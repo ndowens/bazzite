@@ -12,8 +12,8 @@ modules:
   - from-file: dnf.yml
   - from-file: remove-packages.yml
 
-  # - type: default-flatpaks
-  # - from-file: default-flatpaks.yml
+  - type: default-flatpaks
+  - from-file: default-flatpaks.yml
 
   - type: files
     files:
