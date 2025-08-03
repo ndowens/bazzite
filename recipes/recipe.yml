@@ -13,7 +13,11 @@ modules:
   - from-file: remove-packages.yml
 
   - type: default-flatpaks
-  - from-file: default-flatpaks.yml
+    configurations:
+      - notify: false
+        scope: user
+        install:
+          - eu.betterbird.Betterbird
 
   - type: files
     files:

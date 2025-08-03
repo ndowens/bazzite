@@ -1,7 +1,0 @@
-#yaml-language-server: $schema=https://schema.blue-build.org/modules/default-flatpaks-v2.json
-type: default-flatpaks
-configurations:
-  - notify: false
-    scope: user
-    install:
-      - eu.betterbird.Betterbird
