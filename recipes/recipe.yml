@@ -35,8 +35,6 @@ modules:
   - type: script
     snippets:
       - "setsebool -P domain_kernel_load_modules on"
-    scripts:
-      - hyprland.sh
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
