@@ -8,9 +8,10 @@ base-image: ghcr.io/ublue-os/bazzite
 image-version: latest
 
 modules:
-  - type: dnf
-  - from-file: dnf.yml
-  - from-file: remove-packages.yml
+  - type: chezmoi
+    repository: "https://github.com/ndowens/dotfiles.git"
+    all-users: true
+    file-conflict-policy: replace
 
   - type: default-flatpaks
     configurations:
@@ -19,37 +20,38 @@ modules:
         install:
           - eu.betterbird.Betterbird
 
+  - type: dnf
+  - from-file: dnf.yml
+  - from-file: remove-packages.yml
+
   - type: files
     files:
       - source: system
         destination: /
 
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+  - type: justfiles
+    validate: false
 
   - type: script
     snippets:
       - "setsebool -P domain_kernel_load_modules on"
+    scripts:
+      - hyperland.sh
 
-  - type: chezmoi
-    repository: "https://github.com/ndowens/dotfiles.git"
-    all-users: true
-    file-conflict-policy: replace
-
-  - type: systemd
-    system:
-      enabled:
-        - podman.socket
-        - libvirtd.service
-    user:
-      enabled:
-        - ssh-agent.service
-        - chezmoi-init.service
-        - chezmoi-update.timer
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
   - type: soar
     additional-repos: true
     auto-upgrade: true
     upgrade-interval: "8h"
 
-  - type: justfiles
-    validate: false
+  - type: systemd
+    system:
+      enabled:
+        - libvirtd.service
+        - podman.socket
+    user:
+      enabled:
+        - chezmoi-init.service
+        - chezmoi-update.timer
+        - ssh-agent.service

@@ -8,67 +8,57 @@ enable_copr() {
 
 enable_copr solopasha/hyprland
 enable_copr erikreider/SwayNotificationCenter
-enable_copr gerelef/ghostty
 dnf5 -y install \
-    gum \
-    figlet \
+    brightnessctl \
     cliphist \
+    clipman \
+    figlet \
+    fuse \
     google-noto-fonts-all \
-    libnotify \
+    grim \
+    grimblast \
+    gtk4 \
+    gum \
+    gvfs \
+    hyprcursor \
+    hyprgraphics \
+    hypridle \
+    hyprland \
+    hyprland-qt-support \
+    hyprland-qtutils \
+    hyprland-uwsm \
+    hyprlock \
+    hyprpaper \
+    hyprpicker \
+    hyprpolkitagent \
+    hyprsunset \
+    hyprsysteminfo \
+    ImageMagick \
+    jq \
     kitty \
+    libadwaita \
+    libnotify \
+    network-manager-applet \
+    nm-connection-editor \
+    nwg-dock-hyprland \
+    nwg-drawer \
+    nwg-look \
+    papirus-icon-theme \
+    pavucontrol \
     python3-gobject \
     python3-pip \
     python3-screeninfo \
-    tumbler \
-    brightnessctl \
-    nm-connection-editor \
-    network-manager-applet \
-    gtk4 \
-    libadwaita \
-    fuse \
-    ImageMagick \
-    jq \
-    xclip \
-    slurp \
-    nwg-look \
     qt6ct \
-    xdg-desktop-portal-hyprland \
-    hyprland \
-    hyprlock \
-    hyprpolkitagent \
-    papirus-icon-theme \
-    wlogout \
-    gvfs \
-    grimblast \
-    nwg-dock-hyprland \
-    hypridle \
-    hyprpicker \
-    hyprsysteminfo \
-    hyprsunset \
-    hyprpaper \
-    hyprcursor \
-    hyprgraphics \
-    hyprpolkitagent \
-    hyprland-qtutils \
-    hyprland-qt-support \
-    hyprland-uwsm \
+    rofi-wayland \
+    slurp \
+    SwayNotificationCenter \
+    swaync \
+    swww \
+    tumbler \
     uwsm \
     waybar \
-    rofi-wayland \
-    swaync \
-    wl-clipboard \
-    grim \
-    brightnessctl \
-    pavucontrol \
-    network-manager-applet \
-    clipman \
-    nwg-drawer \
     wdisplays \
-    SwayNotificationCenter \
-    kitty \
-    ghostty
-
-enable_copr solopasha/hyprland
-dnf5 -y install \
-    cliphist \
-    swww 
+    wl-clipboard \
+    wlogout \
+    xclip \
+    xdg-desktop-portal-hyprland
