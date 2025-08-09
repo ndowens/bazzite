@@ -54,7 +54,8 @@ install:
 replace:
   - from-repo: copr:copr.fedorainfracloud.org:xxmitsu:mesa-git
     packages:
-      - mesa
+      - old: mesa
+        new: mesa-git
   - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
     allow-erasing: true
     packages:
