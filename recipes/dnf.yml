@@ -8,6 +8,7 @@ repos:
     enable:
       - lihaohong/chezmoi
       - bieszczaders/kernel-cachyos-lto
+      - kylegospo/LatencyFleX
   files:
     - cloudflare-warp.repo
     - cloudflared.repo
@@ -37,6 +38,7 @@ install:
     - keepassxc
     - krunner-bazaar
     - ksystemlog
+    - latencyflex-vulkan-layer
     - legcord
     - neovim
     - plasma-workspace-x11
@@ -48,6 +50,9 @@ install:
     - zed
     - zen-browser
 replace:
+  - from-repo: copr:copr.fedorainfracloud.org:xxmitsu/mesa-git
+    packages:
+      - mesa
   - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
     allow-erasing: true
     packages:
