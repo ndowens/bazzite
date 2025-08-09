@@ -6,9 +6,11 @@ optfix:
 repos:
   copr:
     enable:
-      - lihaohong/chezmoi
-      #- bieszczaders/kernel-cachyos-lto
+      - bieszczaders/kernel-cachyos-lto
       - kylegospo/LatencyFleX
+      - lihaohong/chezmoi
+      - xxmitsu:mesa-git
+
   files:
     - cloudflare-warp.repo
     - cloudflared.repo
