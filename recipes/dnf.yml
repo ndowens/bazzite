@@ -55,7 +55,14 @@ replace:
   - from-repo: copr:copr.fedorainfracloud.org:xxmitsu:mesa-git
     allow-erasing: true
     packages:
-      - mesa
+      - mesa-dri-drivers
+      - mesa-filesystem
+      - mesa-libEGL
+      - mesa-libgbm
+      - mesa-libGL
+      - mesa-va-drivers
+      - mesa-vulkan-drivers
+
   - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
     allow-erasing: true
     packages:
