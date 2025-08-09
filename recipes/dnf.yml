@@ -9,6 +9,7 @@ repos:
       - lihaohong/chezmoi
       - bieszczaders/kernel-cachyos-lto
       - kylegospo/LatencyFleX
+      - xxmitsu/mesa-git
   files:
     - cloudflare-warp.repo
     - cloudflared.repo
