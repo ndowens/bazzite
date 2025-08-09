@@ -7,9 +7,8 @@ repos:
   copr:
     enable:
       - lihaohong/chezmoi
-      - bieszczaders/kernel-cachyos-lto
+      #- bieszczaders/kernel-cachyos-lto
       - kylegospo/LatencyFleX
-      - xxmitsu/mesa-git
   files:
     - cloudflare-warp.repo
     - cloudflared.repo
@@ -51,7 +50,7 @@ install:
     - zed
     - zen-browser
 replace:
-  - from-repo: copr:copr.fedorainfracloud.org:xxmitsu/mesa-git
+  - from-repo: copr:copr.fedorainfracloud.org:xxmitsu:mesa-git
     packages:
       - mesa
   - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
