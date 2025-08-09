@@ -53,9 +53,9 @@ install:
     - zen-browser
 replace:
   - from-repo: copr:copr.fedorainfracloud.org:xxmitsu:mesa-git
+    allow-erasing: true
     packages:
-      - old: mesa
-        new: mesa-git
+      - mesa
   - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
     allow-erasing: true
     packages:
