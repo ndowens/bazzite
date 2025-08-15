@@ -21,9 +21,9 @@ repos:
     - sneexy-zen.repo
 install:
   packages:
+    - android-tools
     - bazaar
     - bchunk
-    - brave-browser
     - chezmoi
     - cloudflare-warp
     - cloudflared
