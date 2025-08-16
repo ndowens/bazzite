@@ -24,6 +24,7 @@ install:
     - android-tools
     - bazaar
     - bchunk
+    - certbot-dns-cloudflare
     - chezmoi
     - containerd.io
     - docker-buildx-plugin
@@ -42,6 +43,7 @@ install:
     - legcord
     - neovim
     - plasma-workspace-x11
+    - python3-certbot-dns-cloudflare
     - qemu-kvm
     - scx-scheds
     - ubuntu-nerd-fonts
