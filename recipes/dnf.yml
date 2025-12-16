@@ -48,7 +48,7 @@ install:
     - ubuntumono-nerd-fonts
     - ubuntusans-nerd-fonts
     - zed
-    - brave-browser
+
 replace:
   - from-repo: copr:copr.fedorainfracloud.org:xxmitsu:mesa-git
     allow-erasing: true
