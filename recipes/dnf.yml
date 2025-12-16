@@ -12,8 +12,8 @@ repos:
       - xxmitsu/mesa-git
 
   files:
-    - cloudflare-warp.repo
-    - cloudflared.repo
+    #- cloudflare-warp.repo
+    #- cloudflared.repo
     - docker-ce.repo
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     - ndowens.repo
@@ -51,7 +51,7 @@ install:
     - ubuntumono-nerd-fonts
     - ubuntusans-nerd-fonts
     - zed
-    - zen-browser
+    - brave-browser
 replace:
   - from-repo: copr:copr.fedorainfracloud.org:xxmitsu:mesa-git
     allow-erasing: true
@@ -64,20 +64,20 @@ replace:
       - mesa-va-drivers
       - mesa-vulkan-drivers
 
-  - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
-    allow-erasing: true
-    packages:
-      - old: kernel
-        new: kernel-cachyos-lto
-      - old: kernel-core
-        new: kernel-cachyos-lto-core
-      - old: kernel-devel
-        new: kernel-cachyos-lto-devel
-      - old: kernel-modules
-        new: kernel-cachyos-lto-modules
+#  - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
+#    allow-erasing: true
+#    packages:
+#      - old: kernel
+#        new: kernel-cachyos-lto
+#      - old: kernel-core
+#        new: kernel-cachyos-lto-core
+#      - old: kernel-devel
+#        new: kernel-cachyos-lto-devel
+#      - old: kernel-modules
+#        new: kernel-cachyos-lto-modules
 remove:
   #auto-remove: false
   packages:
-    - kernel-headers
+ #   - kernel-headers
     - waydroid
     - waydroid-selinux
