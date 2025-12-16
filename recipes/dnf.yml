@@ -12,14 +12,10 @@ repos:
       - xxmitsu/mesa-git
 
   files:
-    #- cloudflare-warp.repo
-    #- cloudflared.repo
     - docker-ce.repo
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     - ndowens.repo
-    - brave-browser.repo
     - sneexy-zen.repo
-    - netbird.repo
 install:
   packages:
     - android-tools
@@ -44,7 +40,6 @@ install:
     - latencyflex-vulkan-layer
     - vesktop
     - neovim
-    - netbird
     - plasma-workspace-x11
     - python3-certbot-dns-cloudflare
     - qemu-kvm
