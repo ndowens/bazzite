@@ -36,6 +36,7 @@ install:
     - gparted
     - gwenview
     - hack-nerd-fonts
+    - helium-browser-bin
     - keepassxc
     - krunner-bazaar
     - ksystemlog
