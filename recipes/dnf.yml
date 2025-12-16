@@ -40,7 +40,7 @@ install:
     - krunner-bazaar
     - ksystemlog
     - latencyflex-vulkan-layer
-    - legcord
+    - vesktop
     - neovim
     - plasma-workspace-x11
     - python3-certbot-dns-cloudflare
