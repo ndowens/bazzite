@@ -61,7 +61,7 @@ replace:
       - mesa-va-drivers
       - mesa-vulkan-drivers
 
-  - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos-lto
+  - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos
     allow-erasing: true
     packages:
       - old: kernel
