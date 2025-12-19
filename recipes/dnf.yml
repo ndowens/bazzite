@@ -6,7 +6,7 @@ optfix:
 repos:
   copr:
     enable:
-      - bieszczaders/kernel-cachyos-lto
+      - bieszczaders/kernel-cachyos
       - kylegospo/LatencyFleX
       - lihaohong/chezmoi
       - xxmitsu/mesa-git
@@ -65,13 +65,13 @@ replace:
     allow-erasing: true
     packages:
       - old: kernel
-        new: kernel-cachyos-lto
+        new: kernel-cachyos
       - old: kernel-core
-        new: kernel-cachyos-lto-core
+        new: kernel-cachyos-core
       - old: kernel-devel
-        new: kernel-cachyos-lto-devel
+        new: kernel-cachyos-devel
       - old: kernel-modules
-        new: kernel-cachyos-lto-modules
+        new: kernel-cachyos-modules
 remove:
   #auto-remove: false
   packages:
