@@ -60,21 +60,21 @@ replace:
       - mesa-va-drivers
       - mesa-vulkan-drivers
 
-  #- from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos
-  #  allow-erasing: true
-  #  packages:
-  #    - kernel-cachyos-devel
-  #    - old: kernel
-  #      new: kernel-cachyos
-  #    - old: kernel-core
-  #      new: kernel-cachyos-core
-  #    - old: kernel-devel
-  #      new: kernel-cachyos-devel-matched
-  #    - old: kernel-modules
-  #      new: kernel-cachyos-modules
+  - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos
+    allow-erasing: true
+    packages:
+      - kernel-cachyos-devel
+      - old: kernel
+        new: kernel-cachyos
+      - old: kernel-core
+        new: kernel-cachyos-core
+      - old: kernel-devel
+        new: kernel-cachyos-devel-matched
+      - old: kernel-modules
+        new: kernel-cachyos-modules
 remove:
   #auto-remove: false
   packages:
-   # - kernel-headers
+    - kernel-headers
     - waydroid
     - waydroid-selinux
