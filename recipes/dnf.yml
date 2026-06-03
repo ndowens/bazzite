@@ -48,7 +48,7 @@ install:
     - ubuntusans-nerd-fonts
     - zed
 
-#replace:
+replace:
 #  - from-repo: copr:copr.fedorainfracloud.org:xxmitsu:mesa-git
 #    allow-erasing: true
 #    packages:
@@ -73,7 +73,7 @@ install:
       - old: kernel-modules
         new: kernel-cachyos-modules
 remove:
-  #auto-remove: false
+  auto-remove: false
   packages:
     - kernel-headers
     - waydroid
