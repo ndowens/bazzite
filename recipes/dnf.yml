@@ -73,7 +73,7 @@ install:
       - old: kernel-modules
         new: kernel-cachyos-modules
 remove:
-  auto-remove: false
+  #auto-remove: false
   packages:
     - kernel-headers
     - waydroid
