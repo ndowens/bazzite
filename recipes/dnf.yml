@@ -48,33 +48,33 @@ install:
     - ubuntusans-nerd-fonts
     - zed
 
-replace:
-  - from-repo: copr:copr.fedorainfracloud.org:xxmitsu:mesa-git
+#replace:
+#  - from-repo: copr:copr.fedorainfracloud.org:xxmitsu:mesa-git
+#    allow-erasing: true
+#    packages:
+#      - mesa-dri-drivers
+#      - mesa-filesystem
+#      - mesa-libEGL
+#      - mesa-libgbm
+#      - mesa-libGL
+#      - mesa-va-drivers
+#      - mesa-vulkan-drivers
+
+  - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos
     allow-erasing: true
     packages:
-      - mesa-dri-drivers
-      - mesa-filesystem
-      - mesa-libEGL
-      - mesa-libgbm
-      - mesa-libGL
-      - mesa-va-drivers
-      - mesa-vulkan-drivers
-
-  #- from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos
-  #  allow-erasing: true
-  #  packages:
-  #    - kernel-cachyos-devel
-  #    - old: kernel
-  #      new: kernel-cachyos
-  #    - old: kernel-core
-  #      new: kernel-cachyos-core
-  #    - old: kernel-devel
-  #      new: kernel-cachyos-devel-matched
-  #    - old: kernel-modules
-  #      new: kernel-cachyos-modules
+      - kernel-cachyos-devel
+      - old: kernel
+        new: kernel-cachyos
+      - old: kernel-core
+        new: kernel-cachyos-core
+      - old: kernel-devel
+        new: kernel-cachyos-devel-matched
+      - old: kernel-modules
+        new: kernel-cachyos-modules
 remove:
-  #auto-remove: false
+  auto-remove: false
   packages:
-   # - kernel-headers
+    - kernel-headers
     - waydroid
     - waydroid-selinux
