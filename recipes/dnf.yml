@@ -68,13 +68,12 @@ replace:
         new: kernel-cachyos
       - old: kernel-core
         new: kernel-cachyos-core
-      - old: kernel-devel
+      - old: kernel-headers
         new: kernel-cachyos-devel
       - old: kernel-modules
         new: kernel-cachyos-modules
 remove:
-  auto-remove: false
+  #auto-remove: false
   packages:
-    - kernel-headers
     - waydroid
     - waydroid-selinux
