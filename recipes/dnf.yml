@@ -69,7 +69,7 @@ replace:
       - old: kernel-core
         new: kernel-cachyos-core
       - old: kernel-devel
-        new: kernel-cachyos-devel-matched
+        new: kernel-cachyos-devel
       - old: kernel-modules
         new: kernel-cachyos-modules
 remove:
